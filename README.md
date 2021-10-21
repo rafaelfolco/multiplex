@@ -1,5 +1,7 @@
-# multiplex
 [![CI Actions Status](https://github.com/perftool-incubator/multiplex/workflows/unittest/badge.svg)](https://github.com/perftool-incubator/multiplex/actions)
+[![Code Coverage](https://codecov.io/gh/rafaelfolco/multiplex/branch/master/graph/badge.svg)](link=https://codecov.io/gh/rafaelfolco/multiplex)
+
+# multiplex
 
 Translates a JSON with multi-value parameters into a JSON with single-value parameters.
 

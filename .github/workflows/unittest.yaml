@@ -26,12 +26,13 @@ jobs:
         run: |
           python3 -m venv .venv
           source .venv/bin/activate
-          pip install pytest pytest-html jsonschema
+          pip install pytest pytest-html jsonschema pytest-cov codecov
 
       - name: Run unit tests
         run: |
           source .venv/bin/activate
-          pytest -v --html=report.html --self-contained-html multiplex.py tests/*.py
+          pytest -v --html=report.html --self-contained-html --cov=./ --cov-report=xml multiplex.py tests/*.py
+          codecov
 
       - name: Upload html report
         uses: actions/upload-artifact@v2
