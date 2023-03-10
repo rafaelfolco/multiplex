@@ -11,8 +11,8 @@
         {
             "include": "common-params",
             "params": [
-                { "arg": "bs", "vals": [ "64" ], "id": "1" },
-                { "arg": "bs", "vals": [ "512", "1K" ], "id": "2" }
+                { "arg": "bs", "vals": [ "64" ], "ids": [ "1", "2" ] },
+                { "arg": "bs", "vals": [ "512", "1K" ], "id": "3" }
             ]
         }
     ]
